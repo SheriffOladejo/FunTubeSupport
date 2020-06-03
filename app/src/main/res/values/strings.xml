@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">FunTubeSupport</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="open">Open</string>
+    <string-array name="payments_methodes">
+        <item>PayPal</item>
+        <item>EasyPaisa</item>
+        <item>Jazzcash</item>
+        <item>Skrill</item>
+    </string-array>
+    <string name="close">Close</string>
+    <string name="facebook_app_id">1159655481035278</string>
+    <string name="fb_login_protocol_scheme">fb1159655481035278</string>
+
+</resources>

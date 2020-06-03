@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_contact"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1a2a40">
+        <LinearLayout
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:orientation="vertical"
+            android:id="@+id/framelayout"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp">
+
+            <ImageView
+                android:tint="@color/white"
+                android:src="@drawable/ic_bug_report"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:id="@+id/imageView" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Help us help you by reporting bugs to us!"
+                android:textColor="@color/white"
+                android:textAlignment="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            app:layout_constraintTop_toBottomOf="@id/framelayout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:paddingBottom="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/framelayout">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_marginBottom="10dp"
+                android:id="@+id/support_input_layout_email"
+                android:theme="@style/textview_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:textColor="@color/white"
+                    android:padding="10dp"
+                    android:background="@drawable/edit_text_bg"
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:inputType="textEmailAddress"
+
+                    android:hint="E-Mail" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_marginBottom="10dp"
+
+                android:id="@+id/support_input_layout_name"
+                android:layout_width="match_parent"
+                android:theme="@style/textview_login"
+
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:padding="10dp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/edit_text_bg"
+                    android:id="@+id/full_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:inputType="text"
+                    android:hint="Full Name" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_marginBottom="10dp"
+
+                android:id="@+id/support_input_layout_message"
+                android:layout_width="match_parent"
+                android:theme="@style/textview_login"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:padding="10dp"
+                    android:background="@drawable/edit_text_bg"
+                    android:gravity="top"
+                    android:lines="4"
+                    android:textColor="@color/white"
+                    android:id="@+id/message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:hint="Your Message" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <Button
+                android:layout_marginTop="10dp"
+                android:text="Send Message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/send"
+                android:layout_weight="1"
+                android:padding="16dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:background="@drawable/gradient_dialog_btn"
+                android:elevation="1dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="You can also reach us via:"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:layout_marginTop="15dp" />
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="15dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/whatsapp"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_whatsapp"
+                    android:layout_marginEnd="30dp"/>
+
+                <ImageView
+                    android:id="@+id/messenger"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_messenger"
+                    android:layout_marginEnd="30dp"/>
+
+                <ImageView
+                    android:id="@+id/emailimage"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_email"/>
+
+            </LinearLayout>
+        </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

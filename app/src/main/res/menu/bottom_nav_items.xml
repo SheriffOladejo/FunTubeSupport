@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:title="Home"
+        android:icon="@drawable/ic_home"
+        android:id="@+id/home"
+        app:showAsAction="always"
+        />
+
+    <item
+        android:title="Earnings History"
+        android:icon="@drawable/ic_earnings"
+        android:id="@+id/earnings"
+        app:showAsAction="always"/>
+
+    <item
+        android:title="Withdrawal History"
+        android:icon="@drawable/ic_withdraw"
+        android:id="@+id/withdrawal"
+        app:showAsAction="always"/>
+
+    <item
+        android:title="Report Bugs/Help"
+        android:icon="@drawable/ic_bug"
+        android:id="@+id/bugs"
+        app:showAsAction="always"/>
+
+</menu>

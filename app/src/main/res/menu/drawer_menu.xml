@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/login"
+        android:icon="@drawable/ic_login_black"
+        android:title="Login/Sign Up"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/logout"
+        android:icon="@drawable/ic_logout"
+        app:showAsAction="always"
+        android:title="Logout"/>
+
+    <item
+        android:id="@+id/share"
+        android:icon="@drawable/ic_share"
+        app:showAsAction="always"
+        android:title="Invite Friends"/>
+
+    <item
+        android:id="@+id/download"
+        android:icon="@drawable/ic_download"
+        android:title="Download FunTube!"
+        app:showAsAction="always"/>
+</menu>
